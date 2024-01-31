@@ -31,7 +31,8 @@ const router = createBrowserRouter(
         element={<Github />} />
     </Route>
 
-  )
+  ),
+  { basename: '/React-rout' }
 )
 
 
