@@ -16,6 +16,7 @@ const router = createBrowserRouter(
       <Route path='/about' element={<About />} />
       <Route
         loader={async () => {
+
           const x = await githubloader()
           const y = await otherApiLoader()
 
@@ -41,5 +42,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </UsercontextProvider>
   </React.StrictMode>,
 )
+
 
 
